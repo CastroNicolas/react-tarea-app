@@ -1,7 +1,79 @@
-body{
-  padding: 5px;
+.container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button{
-  margin-right: 10px;
+body {
+  background-image: url("/path/to/notebook-background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul.list-group {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.list-group-item {
+  border: none;
+  margin-bottom: 5px;
+}
+
+.text-decoration-line-through {
+  color: #28a745 !important;
+}
+
+.todo-add-form {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input {
+  border: 2px solid #ddd;
+  border-right: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px 0 0 8px;
+  transition: all 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.todo-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-weight: bold;
+  padding: 0 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.todo-button:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+@media (max-width: 576px) {
+  .todo-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .todo-button {
+    padding: 0 15px;
+    font-size: 14px;
+  }
 }
