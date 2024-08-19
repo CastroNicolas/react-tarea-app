@@ -25,7 +25,7 @@ export const TodoAdd = ({ onNewTodo }) => {
             <div className="input-group mb-3">
                 <input
                     type="text"
-                    placeholder="¿Qué hay que hacer?"
+                    placeholder="What needs to be done?"
                     className="form-control todo-input"
                     name="description"
                     value={description}
